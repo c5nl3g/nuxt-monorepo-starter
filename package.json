@@ -4,10 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm -r dev",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
     "lint": "oxlint --type-aware --type-check",
-    "lint:fix": "oxlint --fix"
+    "lint:fix": "oxlint --fix",
+    "web": "pnpm --filter @nuxt-monorepo/web"
   },
   "devDependencies": {
     "lint-staged": "^16.4.0",
