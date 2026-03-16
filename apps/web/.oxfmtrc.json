@@ -1,0 +1,7 @@
+{
+  "sortTailwindcss": {
+    "stylesheet": "./app/assets/css/main.css",
+    "functions": ["clsx", "cn"],
+    "preserveWhitespace": true
+  }
+}

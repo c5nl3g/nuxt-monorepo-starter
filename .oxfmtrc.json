@@ -8,10 +8,10 @@
       ["value-internal", "value-parent", "value-sibling", "value-index"],
       { "newlinesBetween": true },
       "type-import",
-      "unknown",
-    ],
+      "unknown"
+    ]
   },
   "sortPackageJson": {
-    "sortScripts": true,
-  },
+    "sortScripts": true
+  }
 }
