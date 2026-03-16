@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "pnpm -r build",
+    "db:studio": "pnpm --filter @nuxt-monorepo/db studio",
     "dev": "pnpm -r dev",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
@@ -13,11 +14,16 @@
     "web": "pnpm --filter @nuxt-monorepo/web"
   },
   "devDependencies": {
+    "@types/node": "^25.5.0",
+    "@types/pg": "^8.18.0",
+    "drizzle-kit": "^0.31.9",
     "lint-staged": "^16.4.0",
     "oxfmt": "^0.40.0",
     "oxlint": "^1.55.0",
     "oxlint-tsgolint": "^0.16.0",
-    "simple-git-hooks": "^2.13.1"
+    "simple-git-hooks": "^2.13.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged"
