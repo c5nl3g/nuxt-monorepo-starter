@@ -7,6 +7,7 @@
     "build": "pnpm -r build",
     "clean": "pnpm dlx rimraf -g '**/node_modules' '**/.nuxt'",
     "db:studio": "pnpm --filter @nuxt-monorepo/db studio",
+    "deps:check": "pnpm dlx taze -r",
     "dev": "pnpm -r dev",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
