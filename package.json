@@ -5,9 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "pnpm -r build",
-    "clean": "pnpm dlx rimraf -g '**/node_modules' '**/.nuxt'",
     "db:studio": "pnpm --filter @nuxt-monorepo/db studio",
-    "deps:check": "pnpm dlx taze -r",
+    "deps:check": "pnx taze -r",
     "dev": "pnpm -r dev",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
@@ -16,15 +15,11 @@
     "web": "pnpm --filter @nuxt-monorepo/web"
   },
   "devDependencies": {
-    "@types/node": "^25.5.0",
-    "@types/pg": "^8.20.0",
-    "drizzle-kit": "^0.31.10",
     "lint-staged": "^16.4.0",
-    "oxfmt": "^0.42.0",
-    "oxlint": "^1.57.0",
-    "oxlint-tsgolint": "^0.17.4",
+    "oxfmt": "^0.44.0",
+    "oxlint": "^1.59.0",
+    "oxlint-tsgolint": "^0.20.0",
     "simple-git-hooks": "^2.13.1",
-    "tsx": "^4.21.0",
     "typescript": "^6.0.2"
   },
   "simple-git-hooks": {
@@ -33,6 +28,5 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm run lint",
     "*": "oxfmt --no-error-on-unmatched-pattern"
-  },
-  "packageManager": "pnpm@10.33.0"
+  }
 }
