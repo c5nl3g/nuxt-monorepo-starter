@@ -12,13 +12,14 @@
     "fmt:check": "oxfmt --check",
     "lint": "oxlint --type-aware --type-check",
     "lint:fix": "oxlint --fix",
+    "reset": "pnpm dlx rimraf -g '**/node_modules' '**/.nuxt' '**/pnpm-lock.yaml'",
     "web": "pnpm --filter @nuxt-monorepo/web"
   },
   "devDependencies": {
     "lint-staged": "^16.4.0",
-    "oxfmt": "^0.44.0",
-    "oxlint": "^1.59.0",
-    "oxlint-tsgolint": "^0.20.0",
+    "oxfmt": "^0.45.0",
+    "oxlint": "^1.60.0",
+    "oxlint-tsgolint": "^0.21.0",
     "simple-git-hooks": "^2.13.1",
     "typescript": "^6.0.2"
   },
