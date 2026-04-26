@@ -6,25 +6,23 @@
   "scripts": {
     "build": "pnpm -r build",
     "db:studio": "pnpm --filter @nuxt-monorepo/db studio",
-    "deps:check": "pnx taze -r",
+    "deps:check": "pnpm dlx taze -r",
     "dev": "pnpm -r dev",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
     "lint": "oxlint --type-aware --type-check",
     "lint:fix": "oxlint --fix",
+    "prepare": "husky",
     "reset": "pnpm dlx rimraf -g '**/node_modules' '**/.nuxt' '**/pnpm-lock.yaml'",
     "web": "pnpm --filter @nuxt-monorepo/web"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
-    "oxfmt": "^0.45.0",
-    "oxlint": "^1.60.0",
-    "oxlint-tsgolint": "^0.21.0",
-    "simple-git-hooks": "^2.13.1",
-    "typescript": "^6.0.2"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm exec lint-staged"
+    "oxfmt": "^0.46.0",
+    "oxlint": "^1.61.0",
+    "oxlint-tsgolint": "^0.22.0",
+    "typescript": "^6.0.3"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm run lint",
