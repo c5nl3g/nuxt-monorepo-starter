@@ -11,8 +11,9 @@
     "studio": "pnpm drizzle-kit studio"
   },
   "devDependencies": {
-    "drizzle-kit": "1.0.0-beta.20",
-    "drizzle-orm": "1.0.0-beta.20"
+    "@types/node": "^25.6.0",
+    "drizzle-kit": "^1.0.0-rc.2-203eab8",
+    "drizzle-orm": "^1.0.0-rc.2-203eab8"
   },
   "peerDependencies": {
     "@neondatabase/serverless": "*",
