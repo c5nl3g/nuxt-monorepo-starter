@@ -1,8 +1,14 @@
-import { integer, pgTable, varchar } from "drizzle-orm/pg-core";
+import { text, timestamp, boolean, snakeCase } from "drizzle-orm/pg-core";
 
-export const usersTable = pgTable("users", {
-  id: integer().primaryKey().generatedAlwaysAsIdentity(),
-  name: varchar({ length: 255 }).notNull(),
-  age: integer().notNull(),
-  email: varchar({ length: 255 }).notNull().unique(),
+export const user = snakeCase.table("user", {
+  id: text().primaryKey(),
+  name: text().notNull(),
+  email: text().notNull().unique(),
+  emailVerified: boolean().default(false).notNull(),
+  image: text(),
+  createdAt: timestamp().defaultNow().notNull(),
+  updatedAt: timestamp()
+    .defaultNow()
+    .$onUpdate(() => /* @__PURE__ */ new Date())
+    .notNull(),
 });

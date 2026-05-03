@@ -8,11 +8,11 @@ import { relations } from "./relations";
 neonConfig.fetchEndpoint = (host) => `https://${host}/sql`;
 
 const sql = neon(process.env.DATABASE_URL!);
-export const db = drizzleHttp({ client: sql, relations });
+export const db = drizzleHttp({ client: sql, relations, jit: true });
 
 // Required for PlanetScale Postgres WebSocket connections
 neonConfig.pipelineConnect = false;
 neonConfig.wsProxy = (host, port) => `${host}/v2?address=${host}:${port}`;
 
 const pool = new Pool({ connectionString: process.env.DATABASE_URL! });
-export const dbPool = drizzleWs({ client: pool, relations });
+export const dbPool = drizzleWs({ client: pool, relations, jit: true });
