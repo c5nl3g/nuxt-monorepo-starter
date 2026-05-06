@@ -11,13 +11,13 @@
     "studio": "pnpm drizzle-kit studio"
   },
   "devDependencies": {
-    "@types/node": "^25.6.0",
-    "drizzle-kit": "^1.0.0-rc.2-203eab8",
-    "drizzle-orm": "^1.0.0-rc.2-203eab8"
+    "@types/node": "catalog:types",
+    "dotenv": "catalog:dev",
+    "drizzle-kit": "catalog:db",
+    "drizzle-orm": "catalog:db"
   },
   "peerDependencies": {
     "@neondatabase/serverless": "*",
-    "dotenv": "*",
     "drizzle-orm": "*"
   }
 }

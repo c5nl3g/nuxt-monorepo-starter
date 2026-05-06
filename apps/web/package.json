@@ -12,11 +12,11 @@
   },
   "dependencies": {
     "@nuxt-monorepo/db": "workspace:*",
-    "dotenv": "^17.4.2",
-    "drizzle-orm": "1.0.0-beta.20",
-    "nuxt": "^4.4.4",
-    "pg": "^8.20.0",
-    "vue": "^3.5.33",
-    "vue-router": "^5.0.6"
+    "drizzle-orm": "catalog:db",
+    "nuxt": "catalog:prod",
+    "pg": "catalog:db"
+  },
+  "devDependencies": {
+    "vue": "catalog:frontend"
   }
 }

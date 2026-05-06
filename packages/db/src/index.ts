@@ -1,4 +1,3 @@
-import "dotenv/config";
 import { neon, Pool, neonConfig } from "@neondatabase/serverless";
 import { drizzle as drizzleHttp } from "drizzle-orm/neon-http";
 import { drizzle as drizzleWs } from "drizzle-orm/neon-serverless";
