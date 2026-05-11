@@ -2,4 +2,10 @@
 export default defineNuxtConfig({
   compatibilityDate: "2026-05-01",
   devtools: { enabled: true },
+  experimental: {
+    typedPages: true,
+    viewTransition: true,
+  },
+
+  css: ["~/assets/css/main.css"],
 });
