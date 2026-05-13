@@ -15,9 +15,5 @@
     "drizzle-orm": "catalog:db",
     "nuxt": "catalog:prod",
     "pg": "catalog:db"
-  },
-  "devDependencies": {
-    "vue": "catalog:frontend",
-    "vue-router": "catalog:frontend"
   }
 }
