@@ -6,7 +6,7 @@
   "scripts": {
     "build": "pnpm -r build",
     "db:studio": "pnpm --filter @nuxt-monorepo/db studio",
-    "deps:check": "pnpm dlx taze -r",
+    "deps:check": "pnpm dlx taze --maturity-period=1 -r",
     "dev": "pnpm -r dev",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
