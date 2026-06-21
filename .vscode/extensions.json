@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "oxc.oxc-vscode",
+    "antfu.iconify",
+    "vscode-icons-team.vscode-icons",
+    "bradlc.vscode-tailwindcss",
+    "antfu.pnpm-catalog-lens"
+  ]
+}
