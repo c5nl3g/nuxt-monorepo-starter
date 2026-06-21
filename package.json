@@ -6,7 +6,7 @@
   "scripts": {
     "build": "pnpm -r build",
     "db:studio": "pnpm --filter @nuxt-monorepo/db studio",
-    "deps:check": "pnpm dlx taze --maturity-period=1 -r",
+    "deps:check": "pnpm dlx taze --maturity-period=1 --include-locked -r",
     "dev": "pnpm -r dev",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
@@ -25,7 +25,7 @@
     "typescript": "catalog:dev"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm run lint",
+    "*.{js,jsx,ts,tsx,mjs,cjs}": "oxlint --type-aware --type-check --no-error-on-unmatched-pattern",
     "*": "oxfmt --no-error-on-unmatched-pattern"
   }
 }
